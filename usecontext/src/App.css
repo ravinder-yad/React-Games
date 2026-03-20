@@ -1,0 +1,111 @@
+.app-shell {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.context-card {
+  width: min(760px, 100%);
+  border-radius: 26px;
+  padding: clamp(24px, 4vw, 40px);
+  background: linear-gradient(140deg, #ffffff 0%, #fff6ec 100%);
+  border: 1px solid rgba(140, 89, 33, 0.18);
+  box-shadow:
+    0 30px 50px -36px rgba(112, 52, 7, 0.55),
+    0 18px 24px -22px rgba(138, 88, 6, 0.5);
+}
+
+.tag {
+  margin: 0;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #aa5d16;
+  font-weight: 800;
+}
+
+.context-card h1 {
+  margin: 8px 0 0;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #5a2e07;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: #8a5b2a;
+  max-width: 50ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.actions button {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff9f0;
+  background: linear-gradient(140deg, #bf5f0d 0%, #a44a07 100%);
+  box-shadow: 0 10px 16px -11px rgba(133, 61, 7, 0.85);
+}
+
+.actions button:focus-visible {
+  outline: 3px solid #ffd8b4;
+  outline-offset: 2px;
+}
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.panel {
+  border-radius: 18px;
+  padding: 16px;
+  background: #fff2e1;
+  border: 1px solid rgba(156, 92, 30, 0.24);
+}
+
+.panel h2 {
+  margin: 0;
+  color: #64350b;
+  font-size: 1.2rem;
+}
+
+.panel p {
+  margin: 8px 0 0;
+  color: #855728;
+}
+
+.panel.midnight {
+  background: #1b2a45;
+  border-color: #2f456f;
+}
+
+.panel.midnight h2,
+.panel.midnight p,
+.panel.midnight .badge {
+  color: #e7f0ff;
+}
+
+.badge {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

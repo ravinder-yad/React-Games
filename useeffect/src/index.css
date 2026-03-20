@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", "Gill Sans", sans-serif;
+  color: #082a37;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(160, 244, 248, 0.55) 0%, transparent 30%),
+    radial-gradient(circle at 90% 10%, rgba(173, 232, 255, 0.58) 0%, transparent 34%),
+    linear-gradient(160deg, #e9f8ff 0%, #ecfffa 45%, #f7fffd 100%);
+}
